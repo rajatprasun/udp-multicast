@@ -16,9 +16,13 @@ Not all networks are multicast enabled (Some routers do not forward Multicast).
 
 Range Start Address     Range End Address           Description
 
+
 224.0.0.0               224.0.0.255                 Reserved for special “well-known” multicast addresses.
+
 224.0.1.0               238.255.255.255             Globally-scoped (Internet-wide) multicast addresses.
+
 239.0.0.0               239.255.255.255             Administratively-scoped (local) multicast addresses.
+
 
 
 
