@@ -1,5 +1,5 @@
 # udp-multicast
-A simple c++ library to send and receive udp multicast. Goal of this library is to provide a cleaner interface for sending and receiving UDP Multicast data.
+A simple c++ library to send and receive udp multicast. Goal of this library is to provide a cleaner interface for sending and receiving UDP Multicast data. This code is tested with a gcc compiler in linux and can be modified to work with windows or any other operating system with miniamal changes.
 
 
 Multicast is a kind of UDP traffic similar to BROADCAST, but only hosts that have explicitly requested to receive this kind     of traffic will get it.
