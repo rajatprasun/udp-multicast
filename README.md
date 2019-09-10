@@ -12,6 +12,8 @@ Multicast traffic is only UDP (not reliable).
 Multicast migth be 1 to many or 1 to none.
 Not all networks are multicast enabled (Some routers do not forward Multicast).
 
+
+
 Range Start Address     Range End Address           Description
 
 224.0.0.0               224.0.0.255                 Reserved for special “well-known” multicast addresses.
