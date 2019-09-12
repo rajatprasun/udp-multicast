@@ -1,13 +1,5 @@
 #include <stdexcept>
 
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <arpa/inet.h>
-#include <netinet/in.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <stdio.h>
 
 
 
@@ -166,7 +158,7 @@ int UDPMulticast::SendMulticastData(const char *cBuffer,const unsigned int &iMsg
         {
 
 #ifdef DEBUG
-            printf("\nSENDING UDP MULTICAST DATA ON MULTICAST GROUP %s AND PORT NO %d OF LENGTH %d \n",sSendingMulticastGroupAddress.c_str(),ushSendingPortNo,iMsgLength);
+            printf("\nSENDING UDP MULTICAST DATA ON MULTICAST GROUP %s AND PORT NO %d OF LENGTH %d \n",m_sSendingMulticastGroupAddress.c_str(),m_ushSendingPortNo,iMsgLength);
 
             printf("\n####################################################\n");
             for(unsigned int i=0; i<iMsgLength;++i)
@@ -220,7 +212,7 @@ int UDPMulticast::ReceiveMulticastData(unsigned int &iMsgLength, char *cBuffer)
             iMsgLength=iReceivedBytes;
 
 #ifdef DEBUG
-            printf("\nRECEIVED UDP MULTICAST DATA ON MULTICAST GROUP %s AND PORT NO %d OF LENGTH %d \n",sMulticastGroupAddressToJoin.c_str(),ushReceivingPortNo,iMsgLength);
+            printf("\nRECEIVED UDP MULTICAST DATA ON MULTICAST GROUP %s AND PORT NO %d OF LENGTH %d \n",m_sMulticastGroupAddressToJoin.c_str(),m_ushReceivingPortNo,iMsgLength);
 
             printf("\n####################################################\n");
 
